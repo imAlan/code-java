@@ -72,7 +72,7 @@ public class CapturingLambdaTest {
                     consumer.accept(event));
         }
 
-        assertEquals(1000, lamdbaHashcode.size(), "Capturing Lamdbas will be recreated");
+        assertEquals(1000, lamdbaHashcode.size(), "Non Capturing Lamdbas will be recreated");
     }
 
     private static void nonCapturingLambda() {
